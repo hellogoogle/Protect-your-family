@@ -1,0 +1,147 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background:url(../img/background-panda-security.jpg) no-repeat top center;
+}
+
+body#parents {
+background:url(../img/background-parents-en.jpg) no-repeat top center;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+#main{
+width:970px;
+margin:auto;
+}
+header, nav, article{
+display:block;
+}
+
+header{
+text-align:center;
+padding-top:5px;
+height:69px;
+}
+
+#intro{
+margin-top:70px;
+height:200px;
+width:362px;
+margin-left:553px}
+
+#intro h1{font-size:50px;
+line-height:50px;
+margin-bottom:20px}
+#intro p{}
+
+section{
+width:300px;
+height:133px;
+display:block;
+float:left;
+margin-top:150px;}
+
+.first{margin-left:15px;
+background:url(../img/teenagers_back.jpg) no-repeat top center}
+
+.second{margin-left:15px;
+background:url(../img/parents_back.jpg) no-repeat top center}
+
+.third{margin-left:15px;
+background:url(../img/silver_back.jpg) no-repeat top center}
+
+.resources{
+background:url(../img/back-bottom.jpg) no-repeat top center
+}
+
+section h2{font-size:24px;
+margin:5px 10px 15px 10px}
+
+section p{ font-size:11px;
+margin:0 10px 10px 130px}
+
+section a{color:#354242;
+font-weight:bold}
+
+aside{
+background:url(../img/back-bottom.gif) no-repeat top center;
+display:block;
+width:933px;
+height:127px;
+margin:auto;
+clear:both;
+color:#fff
+}
+
+aside h3{font-size:18px;margin:10px 0 10px 0}
+
+aside p{font-size:11px;margin:0 0 10px 0}
+
+aside a{color:#094362;
+ background-color:#c5eaf9;
+ padding:2px 0;
+ text-align:center;
+ font-weight:bold;
+ display:block;
+ width:100px}
+
+.resources-aside{float:left;
+margin-left:15px;
+margin-top:15px;
+width:260px;
+height:110px;}
+
+.protection-aside{float:left;
+margin-left:200px;
+margin-top:15px;
+height:110px;
+width:260px}
+
+
+ul#sliding-navigation
+{
+	list-style: none;
+	font-size: .75em;
+	margin: 0 0 0 20px;
+	padding:0;
+}
+
+ul#sliding-navigation li.sliding-element{
+	float:left;
+	padding:0;
+	margin-right:6px;
+	width:105px;
+}
+
+ul#sliding-navigation li.sliding-element a
+{
+	padding:8px 5px;
+	text-align:center;
+	margin:0;
+	background:url(../img/nav-detail.gif) no-repeat;
+	color: #999;
+	text-decoration: none;
+	display:block;
+}
+
+ul#sliding-navigation li.sliding-element a:hover { 
+color: #ffff66;
+background:url(../img/nav-detailBack.gif) no-repeat;}
+
+footer{
+display:block;
+background-color:#fff;
+clear:both;
+margin:10px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+font-size:12px;
+color:#000;
+padding:5px 0
+}
+
+footer a {color:#000;
+margin:0 10px 0 10px}
