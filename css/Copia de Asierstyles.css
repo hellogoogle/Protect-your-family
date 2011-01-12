@@ -38,6 +38,9 @@ font-family:Arial, Helvetica, sans-serif;
 color: #313c3c;
 }
 
+body#parents {
+background:url(../img/background-parents.jpg) no-repeat top center;
+}
 
 #main{
 width:970px;
@@ -53,6 +56,39 @@ padding-top:5px;
 height:69px;
 }
 
+#intro{
+margin-top:70px;
+height:200px;
+width:362px;
+margin-left:553px}
+
+#intro h1{font-family:creabbrg, Arial, Helvetica, sans-serif;
+font-size:65px;
+line-height:55px;
+margin-bottom:20px;
+}
+
+#intro h2{font-family:creabbrg, Arial, Helvetica, sans-serif;
+font-size:25px;
+color:#0aa311;
+}
+
+#intro p{
+margin-bottom:10px;
+}
+
+#sandwich{
+position:absolute;
+width:250px;
+text-align:center;
+font-family:fennl, Arial;
+clear:both;
+padding:227px 0 0 105px;
+}
+
+#sandwich h3{
+font-size:30px;
+}
 
 section{
 width:300px;
@@ -117,63 +153,6 @@ margin-top:15px;
 height:110px;
 width:260px}
 
-footer{
-display:block;
-background-color:#fff;
-clear:both;
-margin:10px;
--moz-border-radius: 15px;
-border-radius: 15px;
-font-size:12px;
-color:#000;
-padding:5px 0
-}
-
-footer a {color:#000;
-margin:0 10px 0 10px}
-
-body#parents {
-background:url(../img/background-parents.jpg) no-repeat top center;
-}
-
-#intro-parents{
-margin-top:100px;
-height:380px;
-width:362px;
-margin-left:553px}
-
-#intro-parents h1{font-family:creabbrg, Arial, Helvetica, sans-serif;
-font-size:65px;
-line-height:55px;
-margin-bottom:20px;
-}
-
-#intro-parents h2{font-family:creabbrg, Arial, Helvetica, sans-serif;
-font-size:25px;
-color:#0aa311;
-}
-
-#intro-parents p{
-margin-bottom:10px;
-}
-
-#sandwich{
-position:absolute;
-width:250px;
-text-align:center;
-font-family:fennl, Arial;
-clear:both;
-padding:227px 0 0 105px;
-}
-
-#sandwich h3{
-font-size:30px;
-}
-
-#parents-topTable{
-width:942px;
-margin:auto;
-}
 
 ul#sliding-navigation
 {
@@ -226,3 +205,18 @@ display:block;
 padding:13px 5px 10px 5px;
 background:url(../img/nav-detailBack.gif) no-repeat bottom;
 }
+
+footer{
+display:block;
+background-color:#fff;
+clear:both;
+margin:10px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+font-size:12px;
+color:#000;
+padding:5px 0
+}
+
+footer a {color:#000;
+margin:0 10px 0 10px}

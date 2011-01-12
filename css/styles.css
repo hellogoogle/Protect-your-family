@@ -1,29 +1,67 @@
-*{margin:0;
-padding:0;}
+@charset "utf-8";
+*{
+margin:0;
+padding:0;
+}
 
 img{border:0}
 
 @font-face {
   font-family: "creabbrg";
-  src: url(../fonts/CREABBRG.TTF) format("truetype");
+   src: url('../parents/fonts/eot/creabbrg-webfont.eot');
+   src: local('☺'),
+    url('../parents/fonts/eot/creabbrg-webfont.woff') format("woff"),
+    url('../parents/fonts/eot/creabbrg-webfont.ttf') format("truetype"),
+    url('../parents/fonts/eot/creabbrg-webfont.svg#webfont') format("svg");
+      font-weight: normal;
+      font-style: normal;
+  src: url('../parents/fonts/eot/creabbb-webfont.eot');
+  src: local('☺'),
+  url('../parents/fonts/eot/creabbb-webfont.woff') format("woff"),
+  url('../parents/fonts/eot/creabbb-webfont.ttf') format("truetype"),
+  url('../parents/fonts/eot/creabbb-webfont.svg#webfont') format("svg");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "fennl";
+  src: url(../parents/fonts/fennrg_.TTF) format("truetype");
+  font-weight: bold;
+  src: url(../parents/fonts/fennl__.ttf) format("truetype");
+
 }
 
 body{
-background:url(../img/background-panda-security.jpg) no-repeat top center;
 font-family:Arial, Helvetica, sans-serif;
 color: #313c3c;
 }
-#main{
+
+body#parents {
+background:url(../img/background-parents.jpg) no-repeat top center;
+}
+
+
+#container{background:url(../img/cloud-back-wide.jpg) left top;
 width:970px;
 margin:auto;
+padding-bottom:5px
 }
-header{
+
+#main{
+background:url(../img/hand.gif)  no-repeat left top;
+
+}
+
+
+header, nav, article{
 display:block;
 }
 
-article{
-display:block;
-margin:auto;
+header{
+text-align:center;
+padding-top:5px;
+height:69px;
 }
 
 #intro{
@@ -32,11 +70,33 @@ height:200px;
 width:362px;
 margin-left:553px}
 
-#intro h1{font-size:70px;
-line-height:50px;
+#intro h1{font-family:creabbrg, Arial, Helvetica, sans-serif;
+font-size:65px;
+line-height:55px;
 margin-bottom:20px;
-font-family:creabbrg, Arial, Helvetica, sans-serif}
-#intro p{}
+}
+
+#intro h2{font-family:creabbrg, Arial, Helvetica, sans-serif;
+font-size:25px;
+color:#0aa311;
+}
+
+#intro p{
+margin-bottom:10px;
+}
+
+#sandwich{
+position:absolute;
+width:250px;
+text-align:center;
+font-family:fennl, Arial;
+clear:both;
+padding:227px 0 0 105px;
+}
+
+#sandwich h3{
+font-size:30px;
+}
 
 section{
 width:300px;
@@ -58,15 +118,17 @@ background:url(../img/silver_back.jpg) no-repeat top center}
 background:url(../img/back-bottom.jpg) no-repeat top center
 }
 
-section h2{font-size:30px;
-margin:5px 10px 15px 10px;
-font-family:creabbrg, Arial, Helvetica, sans-serif}
+section h2{
+font-family:creabbrg, Arial, Helvetica, sans-serif;
+font-size:24px;
+margin:5px 10px 15px 10px}
 
 section p{ font-size:11px;
 margin:0 10px 10px 130px}
 
 section a{color:#354242;
 font-weight:bold}
+
 
 aside{
 background:url(../img/back-bottom.gif) no-repeat top center;
@@ -78,8 +140,10 @@ clear:both;
 color:#fff
 }
 
-aside h3{font-size:20px;margin:10px 0 10px 0;
-font-family:creabbrg, Arial, Helvetica, sans-serif}
+aside h3{
+font-family:creabbrg, Arial, Helvetica, sans-serif;
+font-size:18px;
+margin:10px 0 10px 0}
 
 aside p{font-size:11px;margin:0 0 10px 0}
 
@@ -90,6 +154,8 @@ aside a{color:#094362;
  font-weight:bold;
  display:block;
  width:100px}
+
+aside a:hover{background-color:#fff}
 
 .resources-aside{float:left;
 margin-left:15px;
@@ -102,6 +168,59 @@ margin-left:200px;
 margin-top:15px;
 height:110px;
 width:260px}
+
+
+ul#sliding-navigation
+{
+	list-style: none;
+	font-size: .75em;
+	margin: 0 0 0 20px;
+	padding:0;
+}
+
+ul#sliding-navigation li.sliding-element{
+	float:left;
+	padding:0;
+	margin-right:6px;
+	width:105px;
+}
+
+ul#sliding-navigation li.sliding-element a
+{
+	padding:8px 5px;
+	text-align:center;
+	margin:0;
+	background:url(../img/nav-detail.gif) no-repeat;
+	color: #000000;
+	text-shadow: 1px 1px 1px #fff;
+	text-decoration: none;
+	display:block;
+}
+
+ul#sliding-navigation li.sliding-element a:hover { 
+color: #000;
+text-shadow:none;
+background:url(../img/nav-detailBack.gif) no-repeat bottom;}
+
+
+ul#sliding-navigation li.sliding-element a.teenagers:hover{
+background:url(../img/nav-detailBackTen.gif) no-repeat bottom;
+}
+
+ul#sliding-navigation li.sliding-element a.silver:hover{
+background:url(../img/nav-detailBackSilver.gif) no-repeat bottom;
+}
+
+ul#sliding-navigation li.sliding-element a.resources:hover{
+background:url(../img/nav-detailBackResources.gif) no-repeat bottom;
+}
+
+body#parents ul#sliding-navigation li a.parents{
+text-shadow:none;
+display:block;
+padding:13px 5px 10px 5px;
+background:url(../img/nav-detailBack.gif) no-repeat bottom;
+}
 
 footer{
 display:block;
